@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-navigacion',
@@ -25,8 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AsyncPipe,
     RouterOutlet,
     RouterLink,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    FooterComponent
+]
 })
 export class NavigacionComponent {
   private breakpointObserver = inject(BreakpointObserver);
