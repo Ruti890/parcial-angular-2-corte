@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './crear-usuario.component.css'
 })
 export class CrearUsuarioComponent {
-  title = "Crear Usuario";
+  title = "Crear Producto";
 
 
   usuarioForm: FormGroup;
@@ -20,10 +20,7 @@ export class CrearUsuarioComponent {
     this.usuarioForm = this.fb.group({
       nombres: ['', Validators.required],
       apellidos: ['', Validators.required],
-      identificacion: ['', [Validators.required, Validators.pattern('^[0-9]{1,10}$')]],
-      fechaNacimiento: ['', Validators.required],
-      genero: ['', Validators.required],
-      pais: ['', Validators.required]
+      identificacion: ['', [Validators.required]],
     });
   }
 

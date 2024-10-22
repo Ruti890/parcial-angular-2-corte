@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
-import { PrincipalComponent } from './principal/principal.component';
 import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 
 export const routes: Routes = [
@@ -9,10 +8,6 @@ export const routes: Routes = [
         component:ListaUsuariosComponent
     },
 
-    {
-        path:'',
-        component:PrincipalComponent
-    },
     {
         path:'crear',
         component:CrearUsuarioComponent
